@@ -1,0 +1,264 @@
+﻿<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aplic. Web de jQuery Mobile</title>
+<link href="jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<script language="javascript">
+
+var nombre,letra,nomber,df;
+function nom2(){
+	
+nombre=document.getElementById("txtNomb").value;
+letra=nombre.toUpperCase();
+document.getElementById("txtNomb").value=letra;
+
+nomber=document.getElementById("txtNomb").value;
+df=nomber.length;
+for(x=0;x<=df-1;x++){
+if((nomber.charAt(x)>='A')&&(nomber.charAt(x)<='Z')||(nomber.charAt(x)==" "))
+{
+}
+else{
+alert("Se encontro un numero. Favor de corregir");
+break;
+}
+}
+}
+var numero,men,numer;
+function nom(){
+	numero=document.getElementById("txtfon").value;
+	men=numero.length;
+	document.getElementById("txtfon").value=numero;
+	
+	for(x=0; x<=men-1; x++){
+		numer=numero.charAt(x);
+	if((numer>=0) && (numer<=9 )|| (numer=='-'))
+	{
+		}
+		else{
+			alert("se encontro una letra,favor de introducir solo números");
+				break;
+			}
+		}
+	}
+var n,con;
+function crear(){
+	n=document.getElementById("txtNo").value;
+	con=n.toUpperCase();
+	document.getElementById("txtNo").value=con;	
+}
+	
+var seg="sfr57d"
+var left; 
+function seguridad(){
+seg=document.getElementById("txtme").value;
+left=document.getElementById("txtseg").value;
+if((seg==left)||(seg=="")){
+	}
+	else{
+		alert("contraseña fija incorrecta");
+	document.getElementById("txtseg").value="";
+     	}
+		
+}
+var n,c,m,a,d,b;
+ function mensaje(){
+n=document.getElementById("txtNomb").value;
+c=document.getElementById("txtcorreo").value;
+m=document.getElementById("txtfon").value;
+a=document.getElementById("txtNo").value;
+d=document.getElementById("txtseg").value;
+
+
+if ((n.length=="")||(c.length=="")||(m.length=="")||(a.length=="")||(d.length=="")){
+
+
+alert("Favor de introducir todos los datos")
+}
+else {
+n=document.getElementById("txtNomb").value="";
+c=document.getElementById("txtcorreo").value="";
+m=document.getElementById("txtfon").value="";
+a=document.getElementById("txtNo").value="";
+d=document.getElementById("txtseg").value="";
+
+alert("Mensaje enviado")
+}
+
+}
+</script>
+</head> 
+<body> 
+
+<div data-role="page" id="page">
+	<div data-role="header">
+		<h1>Ferrari</h1>
+	</div>
+
+	<div data-role="content">	
+		<ul data-role="listview">
+			<li><a href="#page2">inicio</a></li>
+            <li><a href="#page3">Servicios o Productos</a></li>
+			<li><a href="#page4">Consulteria</a></li>
+            <li><a href="#page5">Contactanos</a></li>
+            <li><a href="#page6">Equipo</a></li>		
+        </ul>	
+        <center><img src="imagenes/Ferrari_Logo_by_Grinchuka.png" width="40%" height="20%"></center>	
+	</div>
+	<div data-role="footer">
+		<h4>Autor:Gustavo Cruz Vaquero</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page2">
+	<div data-role="header">
+		<h1>¿Quienes Somos?</h1>
+	</div>
+	<div data-role="content">	
+		
+Aquí podrás comprar los artículos que deseas de modo totalmente simple y rápido directamente a tu casa. Nuestro servicio de paquetería se encargará de entregarte la mercancía en la dirección indicada.
+	
+ <h1>Misión</h1>
+
+AMD produce circuitos integrados y suministra productos programables conjuntamente con soluciones de aplicación a fabricantes de equipos de informática personal y en red y de comunicaciones.
+
+Para alcanzar el éxito, AMD combina conceptos innovadores con el liderazgo en la tecnología de procesos y la excelencia en el diseño y la fabricación a fin de ofrecer productos y servicios que abaratan los costes, mejoran el rendimiento y reducen el tiempo de comercialización de nuestros clientes de todo el mundo.
+<h1>Visión</h1>
+En AMD compartimos la visión de un mundo mejor gracias a la informática, que libera la mente y el espíritu humanos.
+
+AMD es un fabricante líder en tecnologías esenciales para la era de la informática. Junto con nuestros clientes, proporcionamos a las personas de todo el mundo la capacidad de llevar una vida más productiva en todo lo que respeta a la creación, el procesamiento y la comunicación de información y conocimientos. Somos el proveedor de circuitos integrados favorito de nuestros clientes.
+<h1>Valores</h1>
+
+
+• Ética: Somos conscientes del hecho de que formamos parte de una realidad única, conocida y respetada en todo el mundo y tenemos el compromiso de representarla en nuestras relaciones, manteniendo un comportamiento discreto, honesto, coherente y correcto.
+<br><br>
+• Iniciativa: La gente en Ferrari piensa y actúa como si la Compañía fuera suya, buscando nuevas responsabilidades, estableciendo ellos mismos ambiciosos e innovadores objetivos profesionales y anticipando, por tanto, los cambios dirigidos a la mejora continua. 
+<br><br>
+• Excelencia: La gente en Ferrari aplica el concepto de excelencia a su forma de pensar, de planificar, de actuar y de llevar a cabo sus tareas, sin estar nunca suficientemente satisfechos de los resultados alcanzados, buscando en cada actividad técnica o de gestión la solución con el más alto nivel de calidad, para garantizar a todos los clientes la excelencia en los productos y servicios. 
+<br><br>
+• Orgullo de pertenencia: La gente en Ferrari está orgullosa de formar parte de una realidad única e irrepetible y de contribuir personalmente a renovar la leyenda de la tradición Ferrara, anticipando, logrando y excediendo los deseos, expectativas y emociones de nuestros clientes. 
+<br><br>
+• Cuidar el Medio Ambiente: Queremos mejorar el ambiente de trabajo, garantizando las mejores condiciones en términos de habitabilidad, confort, orden y limpieza, para trabajar en un entorno seguro y saludable, donde los altos estándares de calidad están garantizados para todas las personas que trabajan en la Compañía.
+<br><br>
+• Rentabilidad: La gente en Ferrara planifica, consigue y saca el máximo provecho de las inversiones en recursos, estructuras y tecnología en beneficio de la Compañía, los socios y todos los colaboradores a medio y largo plazo, para garantizar el desarrollo y la productividad.
+ 
+<center><img src="imagenes/ferrarilogo05.jpg" width="40%" height="50%"></center>
+    </div>
+	<div data-role="footer">
+		<h4>Ferrari</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page3">
+	<div data-role="header">
+		<h1>Ferrari</h1>
+	</div>
+	<div data-role="content">	
+			<h1>servicios</h1>
+            El departamento Ferrari Classiche se ha creado pensando en los propietarios de Ferrari clásicos, para ofrecerles servicios de restauración y mantenimiento, asistencia técnica y Certificación de Autenticidad.
+            
+            El departamento Ferrari Classiche ha sido creado específicamente para ofrecer a los propietarios de vehículos clásicos Ferrari servicios de restauración y de mantenimiento, Certificaciones de autenticidad y Documentos Comprobantes para vehículos de interés histórico. Las oficinas y el taller de Ferrari Classiche se encuentran en la antigua fundición Ferrari y ocupan un área de 950 metros cuadrados dentro de la fábrica de Maranello. Ferrari Classiche fue inaugurado oficialmente por el Presidente Luca di Montezemolo en julio de 2006.
+    <center><img src="imagenes/DC5.jpg" width="30%" height="40%"></center>        
+            <h1>productos</h1>
+            Ferrari ofrece a sus clientes una amplia gama de productos para el uso y mantenimiento de sus coches. Servicios de financiación, el importante centro de asistencia y restauración para vehículos históricos y diferentes opciones de seguro son sólo algunas de las ofertas por las que puedes preguntar en tu concesionario.
+	
+	<center><img src="imagenes/Ferrari_Icons_and_wallpapers_by_jlfarfan.png" width="20%" height="10%"></center></div>
+	<div data-role="footer">
+		<h4>Ferrari</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page4">
+	<div data-role="header">
+		<h1>Consulteria</h1>
+	</div>
+	<div data-role="content">	
+		Como Consultor Independiente me dedico a asesorar y a asistir a emprendedores, dueños, socios y directivos de Pymes para que puedan liderar efectivamente sus empresas, teniendo en cuenta todos los aspectos organizacionales, comunicacionales y humanos involucrados. 
+
+"Mi objetivo es que cada cliente pueda transformarse en una empresa exitosa con posibilidades de crecer estratégicamente"		
+	    <center><img src="imagenes/nosotros.jpg" width="30%" height="50%"></center>
+        </div>
+	<div data-role="footer">
+		<h4>Ferrari</h4>
+	</div>
+</div>
+<div data-role="page" id="page5">
+	<div data-role="header">
+		<h1>Contactanos</h1>
+	</div>
+	<div data-role="content">	
+    Domicilio:constitucion #1
+    <br>
+    Telefono:2431142076
+    <br>
+    Correo:gu1997hy@hotmail.com
+			<table width="0" border="0">
+  <tr>
+    <td>Nombre</td>
+ <td>
+<input type="text" name="txtNomb" id="txtNomb" value="" onBlur="nom2()"  />
+ </td>
+  </tr>
+  <tr>
+    <td>Email</td>
+    <td>
+    <input type="text" name="txtcorreo" id="txtcorreo" onBlur="corre()"/><br/> 
+</td>
+  </tr>
+  <tr>
+    <td>Telefono</td>
+    <td>
+<input type="text"  name="txtfon" id="txtfon"value=""  / onBlur="nom()" > 
+    </td>
+  </tr>
+  <tr>
+    <td>Asunto</td>
+    <td><input type="text" name="txtNo" id="txtNo" value=""/ onBlur="crear()"></td>
+  </tr>
+  <tr>
+    <td>Seguridad</td>
+    <td>
+    <input type="text" name="txtme" id="txtme" value="sfr57d" disabled="disabled" />
+    <input  name="txtseg" id="txtseg" onBlur="seguridad()" />
+    </td>
+  </tr>
+  <tr>
+    <td colspan="4"><button onClick="mensaje()">Enviar</button></td>
+    </tr>
+  
+</table>
+
+	</div>
+	<div data-role="footer">
+		<h4>Autor:Gustavo Cruz Vaquero</h4>
+	</div>
+</div>
+<div data-role="page" id="page6">
+	<div data-role="header">
+		<h1>Equipo</h1>
+	</div>
+	<div data-role="content">	
+			<center><img src="imagenes/gustavo.jpg" width="30%" height="10%"</center>
+            <h3>Nombre:Gustavo Cruz Vaquero
+              <br>
+               Edad:16 años
+               <br>
+               Nombre de la empresa:Ferrari    
+               <br>
+               Nombre de la escuela:cbtis184 
+               <br>
+               
+               <br>
+                       
+            
+            </h3>            
+    </div>
+	<div data-role="footer">
+		<h4>Grupo:4°"E"</h4>
+	</div>
+</div>
+</body>
+</html>
